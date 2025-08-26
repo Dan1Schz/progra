@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Producto</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Registro de Producto</h1>
+
+    <form>
+
+        <label for="codigo">Código:</label><br>
+        <input type="number" id="codigo" name="codigo"><br><br>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required><br><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="number" id="precio" name="precio"><br><br>
+
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado">
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+        </select><br><br>
+
+        <label for="proImg">Foto del producto:</label><br>
+        <input type="file" id="proImg" name="proImg"><br><br>
+
+        <input type="submit" value="Entregar">
+        <input type="button" value="Regular">
+
+    </form>
+
+    <hr>
+
+  
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th colspan="3">Registro del Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Código</th>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>Precio</th>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>Estado</th>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>Foto</th>
+                <td colspan="2">Aquí va la imagen</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
