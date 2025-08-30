@@ -1,5 +1,3 @@
-package prypruebafigura;
-
 import java.util.Scanner;
 
 

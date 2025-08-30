@@ -1,5 +1,3 @@
-package prypruebafigura;
-
 public class Figuras 
 {
   public void imprimirFigura1(int n)
