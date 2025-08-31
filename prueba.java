@@ -28,7 +28,3 @@ public class prueba {
         f.imprimirFigura5(n);
     }
 }
-
-
-
-
