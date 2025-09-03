@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Corte 1 - Fundamentos Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <h1> Hello World! </h1>
+      <h2> Hello World! </h2>
+      <h4> Hello World! </h4>
+      <h6> Hello World! </h6>
+     
+      <hr>
+      <p>una <strong>etiqueta HTML</strong> es una instrucción
+      que le dice al navegador cómo debe mostrarse una parte del contenido
+      (por ejemplo: <em>título, una imagen, un enlace, una caja de texto etc.)</em></p>
+     
+      <hr>
+      Texto: <input type="text" placeholder="Ingrese su nombre" required />
+      <br>Númerico: <input type="number" />
+      <br>Contraseña: <input type="password" />
+      <br>Botón: <input type="button" value="Registrar" />
+      <br>Calendario: <input type="date" />
+      <br>Checkbox: <input type="checkbox"> <input type="checkbox" />
+      <br>Radio: <input type="radio" name="opcion"> <input type="radio" name="opcion" />
+     
+      <br>
+      Estado:
+      <select>
+        <option>Activo</option>
+        <option>Inactivo</option>
+      </select>
+      <hr>
+      <br>
+      <input type="file" id="proIng" accept="image/*">
+      <br><br>
+      <hr>
+     
+      <table border="1">
+        <thead>
+          <tr>
+            <td>Id</td>
+            <th>Nombre</th>
+            <th>Observaciones</th>
+            <th>Foto</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Juanito</td>
+            <td><input type="text" name="observacion1"></td>
+            <td rowspan="3"><img id="preview" src="" width="150" alt="Aquí aparecerá la foto"></td>
+          </tr>
+         
+          <tr>
+            <td>2</td>
+            <td>Diana</td>
+            <td><input type="text" name="observacion2"></td>
+          </tr>
+         
+          <tr>
+            <td>3</td>
+            <td>Santiago</td>
+            <td><input type="text" name="observacion3"></td>
+          </tr>
+        </tbody>
+      </table>
+     
+      <hr>
+      <a href="https://www.uniajc.edu.co/" target="_blank">Ir a uniajc</a>
+     
+      <p id="currentTime"></p>
+ 
+      <script>
+        const inputFile = document.getElementById("proIng");
+        const previewImg = document.getElementById("preview");
+ 
+        inputFile.addEventListener("change", function() {
+          const file = this.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+              previewImg.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+          }
+        });
+      </script>
+  </body>
+</html>
