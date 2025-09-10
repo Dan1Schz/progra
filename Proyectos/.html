@@ -1,129 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
     <title>Formulario de Inscripcion</title>
 </head>
-
 
 <body>
     <img src="letraH.png" alt="Encabezado" width="200">
 
+    <p id="Titulo">FORMULARIO DE INSCRIPCION</p>
 
-     
-        <p id="Titulo">FORMULARIO DE INSCRIPCION</p>
-            
-
-    <table border="1" id=Tabla1>
+    <table border="1" id="Tabla1">
         <thead>
             <tr>
                 <th colspan="4">Datos de Inscripcion</th>
-                
             </tr>
         </thead>
- 
         <tbody>
             <tr>
                 <td>Nombre Completo</td>
-                <td><input type="text" name="nombre"  placeholder="Ingrese su nombre" required value=""/></td>
+                <td><input type="text" name="nombre" placeholder="Ingrese su nombre" required /></td>
                 <td>Correo Electronico</td>
                 <td><input type="text"></td>
             </tr>
             <tr>
                 <td>Facultad</td>
                 <td>
-
-
-                <select name:"Estado" >
-                    <option>Ingenieria</option>
-                    <option>Ciencias Basicas</option>
-                    <option>Arte</option>
-                </select>
+                    <select name="Estado">
+                        <option>Ingenieria</option>
+                        <option>Ciencias Basicas</option>
+                        <option>Arte</option>
+                    </select>
                 </td>
                 <td>Rol</td>
                 <td>
-                    <select name:"Rol" >
-                    <option>Estudiante</option>
-                    <option>Docente</option>
-                </select>
+                    <select name="Rol">
+                        <option>Estudiante</option>
+                        <option>Docente</option>
+                    </select>
                 </td>
-                </td>
-                
- 
             </tr>
             <tr>
                 <td colspan="2">Adjuntar documento de</td>
                 <td colspan="2">Examinar</td>
-                
- 
             </tr>
-
-        
-
         </tbody>
     </table>
 
-        <p><button type="submit" id="BotonRegister">Registrar</button></p>
+    <p><button type="submit" id="BotonRegister">Registrar</button></p>
 
-<br>
-
+    <br>
 
     <p id="Titulo2">CURSO POWER-BI</p>
-
 
     <table border="1" id="Tabla2">
         <thead>
             <tr>
                 <th colspan="4">Datos de Inscripcion</th>
-                
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Nombre Completo</td>
                 <td colspan="2"><input type="text" name="nombre"/></td>
-                
             </tr>
             <tr>
                 <td>Correo Electronico</td>
                 <td colspan="2"><input type="text"></td>
-
             </tr>
             <tr>
                 <td>Facultad</td>
                 <td colspan="2">
-                <select name:"Estado" id="Estado">
-                    <option>Ingenieria</option>
-                    <option>Ciencias Basicas</option>
-                    <option>Arte</option>
-                </select>
+                    <select name="Estado" id="Estado">
+                        <option>Ingenieria</option>
+                        <option>Ciencias Basicas</option>
+                        <option>Arte</option>
+                    </select>
                 </td>
+            </tr>
             <tr>
                 <td colspan="2">Rol</td>
                 <td>
-                    <select name:"Rol" id="Rol">
-                    <option>Estudiante</option>
-                    <option>Docente</option>
-                </select>
+                    <select name="Rol" id="Rol">
+                        <option>Estudiante</option>
+                        <option>Docente</option>
+                    </select>
                 </td>
-                </td>
-            </tr>
- 
             </tr>
             <tr>
-                <td width="200" colspan="2"><input type="text"/></td>
-                <td width="200" colspan="2"><input type="text"/> </td>
-                
- 
+                <td colspan="2"><input type="text"/></td>
+                <td colspan="2"><input type="text"/></td>
             </tr>
-
         </tbody>
     </table>
 
     <p><button type="submit" id="BotonRegister2">Registrar</button></p>
 
 </body>
-
-
 </html>

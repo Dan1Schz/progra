@@ -1,70 +1,82 @@
-#Titulo{
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-    align-content: center;
+/* Encabezados */
+#Titulo {
     font-weight: 700;
     border-bottom: 2px solid #000000;
-    margin-left: 35%;
-    height: 30px;
-    width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
     background-color: rgb(106, 148, 226);
-
+    box-sizing: border-box;
 }
 
-
-#Tabla1{
-
-margin-left: 30%;
-
-
+#Titulo2 {
+    margin: 20px auto;
+    color: aliceblue;
+    padding: 10px;
+    max-width: 90%;
+    background-color: rgb(207, 148, 37);
+    border: 2px solid green;
+    box-sizing: border-box;
 }
 
-#BotonRegister{
+/* Tablas */
+#Tabla1,
+#Tabla2 {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
 
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000;
+}
+
+/* Botones */
+#BotonRegister,
+#BotonRegister2 {
     color: aliceblue;
     font-weight: 700;
-    border-bottom: 1px solid #000000;
-    height: 30px;
-    width: 250px;
+    border: none;
+    height: 40px;
+    width: 90%;
+    max-width: 300px;
     background-color: rgb(6, 32, 80);
-
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-body{
-
-    text-align:center;
-    
+/* Responsividad */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+    }
 }
 
+@media (max-width: 480px) {
+    th, td {
+        display: block;
+        width: 100%;
+    }
 
-#Titulo2{
-align-content: center;
-margin-left: 30%;
-margin-bottom: 0%;
-color: aliceblue;
-height: 50px;
-width: 616px;
-background-color: rgb(207, 148, 37);
-border-width: 2px;
-border-style: solid;
-border-color: green;
-}
+    tr {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ccc;
+    }
 
-
-#Tabla2{
-border: 2px #000000;
-margin-left: 30%;
-width: 620px;
-height: 50px;
-}
-
-#BotonRegister2{
-    margin-left: -1%;
-    margin-top: -20px;
-    color: aliceblue;
-    font-weight: 700;
-    border-bottom: 1px solid #000000;
-    height: 30px;
-    width: 620px;
-    background-color: rgb(6, 32, 80);
-
+    table {
+        border: none;
+    }
 }
