@@ -5,10 +5,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 #Titulo {
     font-weight: 700;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #000;
     margin: 20px auto;
     padding: 10px;
     max-width: 90%;
@@ -26,8 +25,7 @@ body {
     box-sizing: border-box;
 }
 
-#Tabla1,
-#Tabla2 {
+#Tabla1, #Tabla2 {
     border-collapse: collapse;
     width: 90%;
     max-width: 600px;
@@ -55,13 +53,13 @@ th, td {
     border-radius: 6px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     th, td {
         font-size: 14px;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     th, td {
         display: block;
         width: 100%;
