@@ -1,0 +1,70 @@
+#Titulo{
+
+    align-content: center;
+    font-weight: 700;
+    border-bottom: 2px solid #000000;
+    margin-left: 35%;
+    height: 30px;
+    width: 450px;
+    background-color: rgb(106, 148, 226);
+
+}
+
+
+#Tabla1{
+
+margin-left: 30%;
+
+
+}
+
+#BotonRegister{
+
+    color: aliceblue;
+    font-weight: 700;
+    border-bottom: 1px solid #000000;
+    height: 30px;
+    width: 250px;
+    background-color: rgb(6, 32, 80);
+
+}
+
+body{
+
+    text-align:center;
+    
+}
+
+
+#Titulo2{
+align-content: center;
+margin-left: 30%;
+margin-bottom: 0%;
+color: aliceblue;
+height: 50px;
+width: 616px;
+background-color: rgb(207, 148, 37);
+border-width: 2px;
+border-style: solid;
+border-color: green;
+}
+
+
+#Tabla2{
+border: 2px #000000;
+margin-left: 30%;
+width: 620px;
+height: 50px;
+}
+
+#BotonRegister2{
+    margin-left: -1%;
+    margin-top: -20px;
+    color: aliceblue;
+    font-weight: 700;
+    border-bottom: 1px solid #000000;
+    height: 30px;
+    width: 620px;
+    background-color: rgb(6, 32, 80);
+
+}
